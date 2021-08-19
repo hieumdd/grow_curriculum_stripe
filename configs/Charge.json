@@ -1,0 +1,52 @@
+{
+    "keys": {
+        "p_key": [
+            "id"
+        ],
+        "incre_key": "created"
+    },
+    "schema": [
+        {
+            "name": "id",
+            "type": "STRING"
+        },
+        {
+            "name": "object",
+            "type": "STRING"
+        },
+        {
+            "name": "amount",
+            "type": "INTEGER"
+        },
+        {
+            "name": "refunded",
+            "type": "BOOLEAN"
+        },
+        {
+            "name": "created",
+            "type": "TIMESTAMP"
+        },
+        {
+            "name": "customer",
+            "type": "RECORD",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "STRING"
+                },
+                {
+                    "name": "object",
+                    "type": "STRING"
+                },
+                {
+                    "name": "created",
+                    "type": "TIMESTAMP"
+                },
+                {
+                    "name": "name",
+                    "type": "STRING"
+                }
+            ]
+        }
+    ]
+}
